@@ -1,0 +1,25 @@
+html,body{margin:0;padding:0}
+body{font-family: "Times New Roman", Times, serif;text-align:center}
+p{margin:0 10px 10px}
+a{padding:5px; text-decoration:none; color:#000000;}
+div#header{background-color:#F3F2ED;}
+div#header h1{height:80px;line-height:80px;margin:0;padding-left:10px;}
+div#container{text-align:left}
+div#content p{line-height:2}
+div#navigation{background:#F6F0E0;}
+div#navigation ul{margin:15px 0; padding:0; list-style-type:none;}
+div#navigation li{margin-bottom:5px;}
+div#extra{background:#CCC8B3;}
+div#footer{background:#BFBD93;}
+div#footer p{margin:0;padding:5px 10px}
+div#container{width:1000px;margin:0 auto}
+div#wrapper{float:left;width:100%}
+div#content{margin: 0 10px}
+div#navigation{float:left;width:150px;margin-left:-700px}
+div#extra{float:left;width:150px;margin-left:-150px}
+div#footer{clear:left;width:100%}
+.important{background-color: #9898FF}
+.code{padding-left: 25px;background-color: #C0C0C0}
+.mail_form{padding: 25px 25px 25px 25px}
+div#suggestion{padding: 25px 25px 5px 25px}
+div#index{padding: 25px 25px 3px 25px}

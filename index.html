@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Learn JavaScript in 10 minutes | Fastest way to learn javaScript</title>
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" type="text/css" href="styles.css" />
+<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="js/jquery.scrollTo.js"></script>
+<script src="float-panel.js"></script>
+</head>
+<body>
+<div id="container">
+<div id="header"><h1>Learn JavaScript in 10 minutes!</h1></div>
+  <div id="wrapper">
+    <div id="content">
+    <section id="what_is" class="section">
+      <h2>What is JavaScript?</h2>
+      <p> In simple terms, JavaScript is the programming language of the web.<br />
+          It is very easy to learn, if you have previous programming experience in C/C++/Java/PHP.<br />
+          Even if you don't have any programming experience you can learn this bery easily!
+      </p>
+      </section>
+      <section id="pre" class="section">
+      <h2>Pre-Requisites!</h2>
+      <p>
+        <strong>Text-editor</strong> : Just any good text editor, which you are familier with (even windows' default notepad would do!)<br />
+        <strong>Browser</strong> : You don't need to download it because you alredy have one (in which you are reading this right now!)
+
+        
+      </p>
+      </section>
+      <section id="start" class="section">
+      <h2>So, lets get into it!</h2>
+      <section id="syntax">
+        <h3>Syntax</h3>
+        <p>
+          The syntax of JavaScript is very similar to that of C, C++, Java and PHP. So, if you have any programming experience in these languages, it is a just a peice of cake for you.<br />
+          <strong>How? you may ask!</strong> well, look at this piece of JS code:<br />
+          <div class="code">
+            <code>
+              var a = 8;<br>
+              var b = 5;<br>
+              var c = a % b;<br>
+              document.write(c);
+            </code>
+          </div>
+          <br />
+          and this is gonna print the value of c in your browser!
+          <div class="important">
+          You have to put your JS code inside &lt;script&gt; tag.
+          </div>
+          so a proper code will be
+          <div class="code">
+          <code>
+            /
+            some HTML
+            /<br>
+            &lt;script&gt;
+            var a = 8;<br>
+              var b = 5;<br>
+              var c = a % b;<br>
+              document.write(c);
+            &lt;/script&gt;
+          </code>
+          </div>
+        </p>
+        </section>
+        <section id="statement" class="section">
+        <h3>Statements and Comments</h3>
+        <p>
+          <strong>Statement</strong><br>
+          Any line of a JS code is a statement like - a declaration statement, control statement... (you will learn about them later!)<br>
+          Any statement in JS ends with a semicolon that is ';' unless you have a block! (you will learn about this later!)
+          <br>
+          <strong>Comment</strong><br>
+          Comment is a not actually a piece of code or maybe it can be defined as line of code which is ignored by the JS interpreter.<br>
+          comments are very useful if you are working in a team or even if you are working alone. It helps to remember things.<br>
+          There are two types of comments in JS - Single line comments and Multi line comments<br>
+          Single line comments starts with double forward slashes (//) and Multi line comments are written within /* and */ as show below:
+          <div class="code">
+          <code>
+            //this is a single line comment! <br>
+            /*
+            This is <br>
+            a <br>
+            multi line comment! <br>
+            */
+          </code>
+          </div>
+          <br>
+          <div class="important">
+          Writing comments is regarded as a good practice in coding.
+          </div>
+        </p>
+        </section>
+
+        <h3>var iables and Data-Types</h3>
+        <p>
+          <strong>DataTypes</strong> : <q>In computer science and computer programming, a data type is a classification of data which tells the compiler or interpreter how the programmer intends to use the data. Most programming languages support various types of data, for example: real, integer or Boolean.</q> That's written in wikipedia!<br>
+          Common premitive date types available in programming languages are <br>
+          int - Integer<br>
+          float - Floating Point Numbers (Decimal Values)<br>
+          boolean / bool - Boolean Value (true / false)<br>
+          double - Big Floating Point Numbers<br>
+          long - Big Integer Numbers<br>
+        </p>
+        <p>
+          However, the plus point is that you don't have to write any data type name while declaring any variable in JS!
+        </p>
+        <p>
+        <strong>Varibales</strong> : <q>In computer programming, a variable is a storage location paired with an associated symbolic name (an identifier), which contains some known or unknown quantity of information referred to as a value. </q> That's the bookish definition!
+        <br>
+        While declaring a variable in JS you need to write var before it.<br>
+        <section id="identifier">
+        Varible declaration follows the rule of identifier - 
+        <ul>
+          <li>Names can contain letters, digits, underscores, and dollar signs.</li>
+          <li>Names must begin with a letter</li>
+          <li>Names can also begin with $ and _ (but we will not use it in this tutorial)</li>
+          <li>Names are case sensitive (y and Y are different variables)</li>
+          <li>Reserved words (like JavaScript keywords) cannot be used as names</li>
+        </ul>
+        </section>
+        </p>
+
+        <h3>Declaring a varible</h3>
+        <p>
+          Look carefully at the code below :<br>
+          <div class="code">
+          <code>
+            var my_name = "JS Learner"; //That's a string variable <br>
+            var my_age = 19; //That's an integer variable<br>
+            var todays_temperature = "75.92"; //That's a floating point number<br>
+            var am_i_good = true; //That's a boolean.
+          </code>
+          </div><br>
+           Nice and Easy isn't it?
+        </p>
+
+        <h3>Array</h3>
+        <p>
+          An array can be defined as a data structure that can store multiple values of a common data type.<br>
+          An array is always stored in a contiguous block of memory.<br>
+          <strong>Defining an array in javascript</strong> <br>
+          Arrays is javascript can be delared as a variable but we can assign values to it inside square brackets.<br>
+          <div class="code">
+          <code>
+            var pets = ["dog", "cat", "rabbit"];<br>
+          </code>
+          </div><br>
+          Also there is one more very popular way of declaring arrays that is, using the <em>new</em> keyword.<br>
+          <div class="code">
+          <code>
+            var pets = new array("dog", "cat", "rabbit");<br>
+          </code>
+          </div><br>
+          Every element of array is stored with an index number. This index number is assigned automatically to each element in the array and in javascript it starts with 0,1,2,3,4....<br>
+          Therefore, we can access any elements of an array very easily, like in the below code - <br>
+          <div class="code">
+          <code>
+            var pets = ["dog", "cat", "rabbit"];<br>
+            document.write(pets[2]);<br>
+          </code>
+          </div><br>
+          The above code will output rabbit.
+        </p>
+
+        <h3>-+Operators=!</h3>
+        <p>
+         <strong>JS Arithmetic Operators</strong> : Arithmetic operators are used to perform arithmetic operations on numbers.<br>
+        <table>
+          <tr>
+          <th style="width:25%">Operator</th>
+          <th>What it does</th>
+          </tr>
+          <tr>
+          <td>+</td>
+          <td>Addition</td>
+          </tr>
+          <tr>
+          <td>-</td>
+          <td>Subtraction</td>
+          </tr>
+          <tr>
+          <td>*</td>
+          <td>Multiplication</td>
+          </tr>
+          <tr>
+          <td>/</td>
+          <td>Division</td>
+          </tr>
+          <tr>
+          <td>%</td>
+          <td>Modulus</td>
+          </tr>
+          <tr>
+          <td>++</td>
+          <td>Increment</td>
+          </tr>
+          <tr>
+          <td>--</td>
+          <td>Decrement</td>
+          </tr>
+        </table>
+        <br>
+        </p>
+        <p>
+          <strong>JS Assignment Operator</strong> : Assignment operators assign values to variables.<br>
+          <table class="w3-table-all notranslate">
+            <tbody><tr>
+            <th style="width:25%">Operator</th>
+            <th>Example</th>
+            <th>Similar to</th>
+            </tr>
+            <tr>
+            <td>=</td>
+            <td>x = y</td>
+            <td>x = y</td>
+            </tr>
+            <tr>
+            <td>+=</td>
+            <td>x += y</td>
+            <td>x = x + y</td>
+            </tr>
+            <tr>
+            <td>-=</td>
+            <td>x -= y</td>
+            <td>x = x - y</td>
+            </tr>
+            <tr>
+            <td>*=</td>
+            <td>x *= y</td>
+            <td>x = x * y</td>
+            </tr>
+            <tr>
+            <td>/=</td>
+            <td>x /= y</td>
+            <td>x = x / y</td>
+            </tr>
+            <tr>
+            <td>%=</td>
+            <td>x %= y</td>
+            <td>x = x % y</td>
+            </tr>
+            <tr>
+            <td>&lt;&lt;=</td>
+            <td>x &lt;&lt;= y</td>
+            <td>x = x &lt;&lt; y</td>
+            </tr>
+            <tr>
+            <td>&gt;&gt;=</td>
+            <td>x &gt;&gt;= y</td>
+            <td>x = x &gt;&gt; y</td>
+            </tr>
+            <tr>
+            <td>&gt;&gt;&gt;=</td>
+            <td>x &gt;&gt;&gt;= y</td>
+            <td>x = x &gt;&gt;&gt; y</td>
+            </tr>
+            <tr>
+            <td>&amp;=</td>
+            <td>x &amp;= y</td>
+            <td>x = x &amp; y</td>
+            </tr>
+            <tr>
+            <td>^=</td>
+            <td>x ^= y</td>
+            <td>x = x ^ y</td>
+            </tr>
+            <tr>
+            <td>|=</td>
+            <td>x |= y</td>
+            <td>x = x | y</td>
+            </tr>
+          </tbody></table>
+        </p>
+        <p>
+          <strong>String Concatination</strong> : '+' operator is used for string concatination.<br>
+          <div class="important">
+          We can also add String and numbers. The obtained result is a String as well!
+          </div>
+        </p>
+        <p>
+          <strong>JS Comparison Operators</strong> : <br>
+          <table class="w3-table-all notranslate">
+          <tbody><tr>
+          <th style="width:12%">Operator</th>
+          <th>What it does</th>
+          </tr>
+          <tr>
+          <td>==</td>
+          <td>equal to</td>
+          </tr>
+          <tr>
+          <td>===</td>
+          <td>equal value and equal type</td>
+          </tr>
+          <tr>
+          <td>!=</td>
+          <td>not equal</td>
+          </tr>
+          <tr>
+          <td>!==</td>
+          <td>not equal value or not equal type</td>
+          </tr>
+          <tr>
+          <td>&gt;</td>
+          <td>greater than</td>
+          </tr>
+          <tr>
+          <td>&lt;</td>
+          <td>less than</td>
+          </tr>
+          <tr>
+          <td>&gt;=</td>
+          <td>greater than or equal to</td>
+          </tr>
+          <tr>
+          <td>&lt;=</td>
+          <td>less than or equal to</td>
+          </tr>
+          <tr>
+          <td>?</td>
+          <td>ternary operator</td>
+          </tr>
+          </tbody></table>
+        </p>
+
+        <p>
+          <strong>JS Logical Operators</strong> : <br>
+          <table class="w3-table-all notranslate">
+          <tbody><tr>
+          <th style="width:12%">Operator</th>
+          <th>what is it</th>
+          </tr>
+          <tr>
+          <td>&amp;&amp;</td>
+          <td>logical and</td>
+          </tr>
+          <tr>
+          <td>||</td>
+          <td>logical or</td>
+          </tr>
+          <tr>
+          <td>!</td>
+          <td>logical not</td>
+          </tr>
+          </tbody></table>
+        </p>
+        <div class="important">
+        You can find all the necessary source code <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Guide/Expressions_and_Operators">here.</a>
+        </div>
+
+        <h3>Conditional Statements</h3>
+        <p>
+          We all make plans and decisions like - <em>if</em> this happens then I will do that <em>else</em> I'll do that!
+          <br>
+          We do same in coding with the help of conditional statements.<br>
+          <ul>
+          <li>We use <em>if</em> to specify a block of code will be executed when a specific condition is true</li>
+          <li>We use <em>else</em> to specify a block of code will be executed when the <em>if</em> condition is false. else doesn't checks for any new condition</li>
+          <li>We use <em>else if</em> to speacify a new condition to test if the above condition is false</li>
+          </ul>
+        </p>
+        <p>
+        Now we are going to show you code examples of each of these control statements - <br>
+        <strong>The if statement</strong><br>
+        <div class="code">
+          <code>
+            var no_of_pencils = 19;<br>
+            if(no_of_pencils < 15) {<br>
+              document.write("you have less pencils");<br>
+            }<br>
+          </code>
+        </div>
+        <strong>The if statement with an else block</strong><br>
+        <div class="code">
+          <code>
+            var no_of_pencils = 19;<br>
+            if(no_of_pencils < 15) {<br>
+              document.write("you have less pencils");<br>
+            } else {<br>
+              document.write("You have good ammount of pencils!");<br>
+            }<br>
+          </code>
+        </div>
+        <strong>The else if statement</strong><br>
+        <div class="code">
+          <code>
+            var no_of_pencils = 19;<br>
+            if(no_of_pencils < 15) {<br>
+              document.write("you have less pencils");<br>
+            } else if(no_of_pencils >=15 && no_of_pencils >20) {<br>
+              document.write("You should buy more pencils!");<br>
+            }<br>
+            else {<br>
+              document.write("You have good ammount of pencils!");<br>
+            }<br>
+          </code>
+        </div><br>
+        <div class="important">
+        There is also is <em>switch</em> conditional statement. If you want to learn about it you can follow <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Statements/switch"> this link</a>.
+        </div>
+
+        </p>
+        
+
+        <h3>Loop statement in JavaScript</h3>
+        <p>
+        Loops are used to execute a block of code for a given time.<br>
+        Loops are very useful if you have to run the same code few times, each time with a different value.<br>
+        </p>
+        <p>
+        <strong>Different kinds of looping</strong> : <br>
+        <ul>
+          <li><em>for</em> - loops through a block of code a specific number of times</li>
+          <li><em>while</em> - loops through a block of code while a specified condition is true</li>
+          <li><em>do/while</em> - loops through a block of code while a specified condition is true. The only difference between do/while and while is that the code in do block get executed at least once.</li>
+          </ul>
+        </p>
+
+        <p>
+        Now we are going to look at code example of each of these loops - <br>
+        <strong>The for loop</strong>
+        <div class="code">
+          <code>
+            var i;<br>
+            for(i = 0; i < 10; i++) {<br>
+              document.write("The current value of I is" + i);<br>
+            }<br>
+          </code>
+        </div><br>
+        The above code will show the incremented value of i 10 times starting from 0.
+        <br>
+        <strong>The while loop</strong>
+        <div class="code">
+          <code>
+            var i = 0;<br>
+            while(i < 10) {<br>
+              document.write("The current value of I is" + i);<br>
+              i++;<br>
+            }<br>
+          </code>
+        </div><br>
+        <strong>The do while loop</strong>
+        <div class="code">
+          <code>
+            var i = 0;<br>
+            do {<br>
+              document.write("The current value of I is" + i);<br>
+              i++;<br>
+            } while(i < 10);<br>
+          </code>
+        </div><br>
+        </p>
+
+
+        <h3>Functions in JS</h3>
+        <p>
+        <strong>Function</strong> : A function can be defined as a block of reusable code that is designed to perform a particular task.<br>
+        Functions provide better modularity for your application.<br>
+        A function block is executed when "someone" or "something" call it (or invokes it).
+        <br>
+        </p>
+        A code of syntax for function in JS in shown below -<br>
+        <div class="code">
+          <code>
+            function myFun(x, y) {<br>
+              return x + y;<br>
+            }
+          </code>
+        </div>
+        <br>
+        <p>
+          The x and y which is inside paranthesis is called arguments. We pass arguments while invoking a function. They aren't necessary if our function don't have to perform any operation on a variable which is outside it's scope (we'll learn about this later).
+        
+        </p>
+        <div class="important">
+        The name convention of the function also follows the rules of name an <a href="#identifier">identifier</a>.<br>
+        Different arguments are separated by commas.
+        </div>
+        <p>
+        <strong>How to invoke JS functions?</strong> : The function will execute when it gets invoked :<br>
+
+        When an event occurs (when a user clicks a button)<br>
+        Automatically (self invoked)<br>
+        When it is invoked (called) from JavaScript code<br>
+        Look at the below code carefully to learn how to invoke a function :
+        <div class="code">
+          <code>
+            &lt;script&gt;<br>
+              function myFun(x, y) {<br>
+                return x + y;<br>
+              }<br>
+              var a = 5;<br>
+              var b = 5;<br>
+              var c = myFun(a, b);<br>
+              document.write(c);<br>
+            &lt;/script&gt;<br>
+          </code>
+        </div>
+        <br>
+        The above code will display the sum of these two variables in the browser.
+        </p>
+        <p>
+          <strong>The return statement</strong> : When code interpreter reaches the return statement of the function, the control goes out of the function returning a value.
+          <br>
+          Look at the below code :
+          <br>
+          <div class="code">
+          <code>
+            &lt;script&gt;<br>
+              function isEven(x) {<br>
+                return (x%2 == 0);<br>
+              }<br>
+              var a = 8;<br>
+              if(!isEven(a)) {<br>
+                document.write("the number is odd!");<br>
+              } else {<br>
+                document.write("the number is <br>even!");<br>
+              }<br>
+            &lt;/script&gt;<br>
+          </code>
+        </div>
+        <br>
+        The above code has a function that returns a boolean value which is then checked by an if statement. If the value returned is true, it tells you that the number is even else, it tells you odd!
+        </p>
+
+        <div class="important">
+        The biggest benefit of using function is that you can reuse the code as many times as you want!<br>
+        If a variable is declared outside a function then it can't work inside the block of the function.<br>
+        If a variable is declared inside a function, it can't do anything outside it OR it's scope is only till the closing brace.
+        </div>
+        <br>
+        <p>
+        This session is complete for now. But the JavaScript does not ends here. There is a very long path to cover.<br>
+        But now your basics of javascript are clear and you can move further without hesitation!
+        </p>
+    </section>
+
+    </div>
+  </div>
+
+  
+ 
+  <!-- navigation bar hi hata diya BC -->
+
+  <!-- extra shit goes here! -->
+  <div id="extra">
+    <p><div id="suggestion"><strong>Any Suggestions?</strong></div></p>
+    <p>
+      <div class="mail_form">
+        <form action="mailto:tejasjaiswal9711@gmail.com" method="post" enctype="text/plain">
+        Name:<br>
+        <input type="text" name="name" size="11"><br>
+        E-mail:<br>
+        <input type="text" name="mail" size="11"><br>
+        Comment:<br>
+        <textarea name="message" rows="6" cols="10" ></textarea>
+        <br><br>
+        <input type="submit" value="Send">
+        <input type="reset" value="Reset">
+        </form>
+      </div>
+    </p>
+  </div>
+  <div id="footer">
+    <p> &copy;Tejas Kumar Jaiswal (github.com/tejas-kr)</p>
+  </div>
+</div>
+</body>
+</html>
