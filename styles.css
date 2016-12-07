@@ -1,4 +1,8 @@
 html,body{margin:0;padding:0}
+h1{text-align: center;color: #1F7A5A;}
+h2{color: #A6BF88;}
+h3{color: #A17358;}
+strong{color: #96264D}
 body{font-family: "Times New Roman", Times, serif;text-align:center}
 p{margin:0 10px 10px}
 a{padding:5px; text-decoration:none; color:#000000;}
